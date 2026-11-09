@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的爱情网站</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#ffd6e7,#ff9ebf);
+  font-family: sans-serif;
+}
+.card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 25px;
+  text-align: center;
+  width: 80%;
+  max-width: 350px;
+  box-shadow: 0 10px 30px #e88baa55;
+}
+h1 { color: #ed5791; }
+p { color: #777; }
+button {
+  border: 0;
+  border-radius: 30px;
+  padding: 13px 28px;
+  background: #f45b99;
+  color: white;
+  font-size: 17px;
+}
+#qr {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>💕 欢迎来到我的世界</h1>
+  <p>这是我用心制作的第一个网站 🌷</p>
+  <button onclick="showQR()">💕 赞助我</button>
+  <img id="qr" src="wechat.jpg" alt="微信收款二维码">
+  <p>感谢你的支持 ❤️</p>
+</div>
+<script>
+function showQR() {
+  document.getElementById("qr").style.display = "block";
+}
+</script>
+</body>
+</html>
